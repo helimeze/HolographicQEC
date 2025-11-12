@@ -1,19 +1,12 @@
 # qec-entanglement-advanced
 
-A richer layout that adds:
-- A more general **stabilizer entropy** engine (imported from the basic repo).
+The layout:
+- General **stabilizer entropy** engine (imported from the basic repo).
 - **Correlation-augmented decoding** (add edges/weights from detector MI).
 - A small **holographic entanglement** notebook: AdS3 geodesic length for an interval
-  (Ryu–Takayanagi) with cutoff, for comparison to area-law/constant terms in codes.
+  (Ryu–Takayanagi) with UV-cutoff, for comparison to area-law/constant terms in codes.
 
-## Install
-```bash
-python -m venv .venv && source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
-
-## Workflows
+## Workflow
 ### 1) Augmented decoding
 ```bash
 python src/build_circuit.py --rounds 80 --p 1.5e-3 --out circuit.stim
@@ -27,5 +20,5 @@ Run the simple Python notebook script:
 ```bash
 python notebooks/holographic_RT_AdS3.py
 ```
-It computes the regulated geodesic length for a boundary interval of size l at cutoff epsilon,
-showing S = (c/3) * log(l/epsilon) behavior, and compares qualitative constant terms to TEE.
+It computes the (UV) regulated geodesic lenghth for a boundary interval of size l at cutoff epsilon,
+showing S = (c/3) * log(l/epsilon) behavior, and compares qualitative constant terms to TEE. Here c is the central charge as per uusual..

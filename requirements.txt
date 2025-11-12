@@ -1,0 +1,7 @@
+stim>=1.12
+pymatching>=2.3
+numpy>=1.26
+pandas>=2.2
+pyarrow>=15.0
+matplotlib>=3.8
+scipy>=1.13

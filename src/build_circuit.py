@@ -24,3 +24,4 @@ if __name__ == "__main__":
     circ = toy_surface_fragment(rounds=args.rounds, p=args.p)
     open(args.out,"w").write(str(circ))
     print(f"Wrote {args.out}")
+

@@ -1,4 +1,4 @@
-# qec-entanglement-advanced
+# HolographicQEC
 
 The layout:
 - General **stabilizer entropy** engine (imported from the basic repo).

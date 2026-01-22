@@ -40,7 +40,7 @@ def parse_kp_regions(arg: str, L: int):
                 qs.add(L*L + (i%L)*L + (j%L))
         regions.append(sorted(qs))
     if len(regions)!=3:
-        raise ValueError("Provide exactly three regions for KP TEE.")
+        raise ValueError("Provide exactly three regions for Kitaev–Preskill TEE.")
     return regions
 
 # main execution: compute TEE for toric-like code
